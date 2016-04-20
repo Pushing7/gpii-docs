@@ -3,11 +3,26 @@
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
+    {% comment %}
+     The code below iterates through the navigation items to figure out which page is active.
+
+     @@ Look at adding jQuery or somethign to iterate through headings on the current page and append a <ul> to the active item.
+
+     To get a new
+
+     Refs: https://shopify.github.io/liquid/
+    {% endcomment %}
       {% for link in site.navigation %}
+        {% assign class = nil %}
         {% if link.internal == true %}
-          <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+          {% capture clean %}{{ link.url | remove: "." }}{% endcapture %}
+          {% if page.url contains clean %}
+            {% assign class = 'active' %}
+          {% endif %}
+          <li><a href="{{ site.baseurl }}/{{ link.url }}" class="{{ class }}">{{ link.text }}</a></li>
         {% else %}
-          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+          {% assign class = 'ext' %}
+          <li><a href="{{ link.url }}" class="{{ class }}">{{ link.text }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>

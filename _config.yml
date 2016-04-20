@@ -10,7 +10,7 @@ collections:
 
 # Title
 name: GPII StyleGuide
-subtitle: Example documentation and style guide.
+subtitle: Example documentation and style guide related to the GPII sites.
 
 # When using this template with a project page set the baseurl to '/project-name'
 # For user/organization pages set this to an empty string
@@ -44,9 +44,9 @@ navigation:
 # Repo list
 # List repos that you would like to appear on the homepage here
 repos:
-- name: DOCter
+- name: gpii-docs
   description: GPII documentation
-  url: #
+  url: https://github.com/Pushing7/gpii-docs
 
 # Style Variables
 brand_color: "#006185"
