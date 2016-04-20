@@ -9,8 +9,8 @@ collections:
     permalink: /:path/
 
 # Title
-name: DOCter
-subtitle: A Jekyll template for project documentation
+name: GPII StyleGuide
+subtitle: Example documentation and style guide.
 
 # When using this template with a project page set the baseurl to '/project-name'
 # For user/organization pages set this to an empty string
@@ -21,8 +21,8 @@ baseurl: '/DOCter'
 
 # Author/Organization info to be displayed in the templates
 author:
-  name: Name
-  url: http://localhost:4000
+  name: Pushing7
+  url: http://www.pushing7.com
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl:
@@ -34,22 +34,22 @@ navigation:
 - text: Home
   url: ./
   internal: true
-- text: Example Page
-  url: example_page/
+- text: Visual Style Guide
+  url: ./style-guide
   internal: true
-- text: DOCter Repo
-  url: https://github.com/cfpb/DOCter
+- text: GPII (Staging)
+  url: http://staging.gpii.net
   internal: false
 
 # Repo list
 # List repos that you would like to appear on the homepage here
 repos:
 - name: DOCter
-  description: Jekyll template for docs
-  url: https://github.com/cfpb/DOCter
+  description: GPII documentation
+  url: #
 
 # Style Variables
-brand_color: "#2cb34a"
+brand_color: "#006185"
 
 # Offline caching
 offline_cache: false
